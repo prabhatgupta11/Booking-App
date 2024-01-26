@@ -13,7 +13,7 @@ const Header = () => {
         <span className="flex space-x-2">
           <Link
             to="/sign-in"
-            className="text-white px-4 py-2 rounded hover:bg-gray-700"
+            className="text-blue-600 font-bold bg-white px-4 py-2 rounded hover:bg-gray-700"
           >
             Sign In
           </Link>
