@@ -26,7 +26,7 @@ app.use(cors(
 ));
 
 
-app.use("/api/user",userRouter)
+app.use("/api/users",userRouter)
 
 
 app.listen(4500,()=>{
