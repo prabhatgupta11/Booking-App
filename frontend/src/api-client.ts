@@ -21,7 +21,7 @@ export const register = async (formData: RegisterFormData) => {
 };
 
 export const signIn = async (formData: SignInFormData) => {
-  const response = await fetch(`${API_BASE_URL}/api/auth/login`, {
+  const response = await fetch(`${API_BASE_URL}/api/users/login`, {
     method: "POST",
     credentials: "include",
     headers: {
@@ -38,7 +38,7 @@ export const signIn = async (formData: SignInFormData) => {
 };
 
 export const validateToken = async () => {
-  const response = await fetch(`${API_BASE_URL}/api/auth/validate-token`, {
+  const response = await fetch(`${API_BASE_URL}/api/users/validate-token`, {
     credentials: "include",
   });
 
@@ -50,7 +50,7 @@ export const validateToken = async () => {
 };
 
 export const signOut = async () => {
-  const response = await fetch(`${API_BASE_URL}/api/auth/logout`, {
+  const response = await fetch(`${API_BASE_URL}/api/users/logout`, {
     credentials: "include",
     method: "POST",
   });
