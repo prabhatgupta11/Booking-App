@@ -34,9 +34,7 @@ const SignIn = () => {
   });
 
   const onSubmit = handleSubmit((data) => {
-   
-   let val= mutation.mutate(data);
-   console.log(37,val)
+    mutation.mutate(data);
   });
 
   return (
