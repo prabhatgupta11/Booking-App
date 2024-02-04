@@ -5,8 +5,9 @@ import  mongoose from "mongoose";
 import userRouter from "./routes/users";
 import loginRouter from "./routes/auth";
 import cookieParser from "cookie-parser";
+import path from "path";
 const run = async () => {
-    await mongoose.connect(process.env.MONGO_URL as string,)
+    await mongoose.connect(process.env.MONGODB_CONNECTION_STING as string,)
     console.log("Connected to myDB");
   }
   
@@ -24,6 +25,8 @@ app.use(cors(
     credentials:true,
   }
 ));
+
+app.use(express.static(path.join(__dirname,"../../frontend/dist")));
 
 
 app.use("/api/users",userRouter)
