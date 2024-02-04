@@ -9,7 +9,7 @@ import verifyToken from "../middleware/auth"
 
 const userRouter = express.Router();
 
-
+// conosole.log()
 // Regiseter Api
 userRouter.post("/register",[
     check("firstName","First Name is required").notEmpty(),
