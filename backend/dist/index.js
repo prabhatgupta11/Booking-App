@@ -16,7 +16,7 @@ const express_1 = __importDefault(require("express"));
 const cors_1 = __importDefault(require("cors"));
 require("dotenv/config");
 const mongoose_1 = __importDefault(require("mongoose"));
-const users_1 = __importDefault(require("./dist/routes/users"));
+const users_1 = __importDefault(require("./routes/users"));
 const cookie_parser_1 = __importDefault(require("cookie-parser"));
 const path_1 = __importDefault(require("path"));
 const run = () => __awaiter(void 0, void 0, void 0, function* () {
